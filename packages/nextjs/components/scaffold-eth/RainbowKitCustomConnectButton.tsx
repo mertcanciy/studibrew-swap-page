@@ -26,7 +26,7 @@ export const RainbowKitCustomConnectButton = () => {
             {(() => {
               if (!connected) {
                 return (
-                  <button className="btn btn-primary btn-sm" onClick={openConnectModal} type="button">
+                  <button className="btn btn-[#EDB257] btn-sm" onClick={openConnectModal} type="button">
                     Connect Wallet
                   </button>
                 );
@@ -74,7 +74,7 @@ export const RainbowKitCustomConnectButton = () => {
                     <button
                       onClick={openAccountModal}
                       type="button"
-                      className="btn btn-secondary btn-sm pl-0 pr-2 shadow-md"
+                      className="btn bg-[#EDB257] btn-sm pl-0 pr-2 shadow-md"
                     >
                       <BlockieAvatar address={account.address} size={24} ensImage={account.ensAvatar} />
                       <span className="ml-2 mr-1">{account.displayName}</span>
