@@ -1,4 +1,4 @@
-#STUDIBREW DEX
+# STUDIBREW DEX
 A decentralized exchange that works with AMM structure. Users who earned STUBREW from mobile application, they are now able to swap their tokens with ETH via this exchange! 
 
 # 🏗 Scaffold-ETH 2
