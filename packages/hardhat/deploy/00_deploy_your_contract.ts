@@ -47,14 +47,14 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
 
  const studiBrewDEXcontract = await hre.ethers.getContract("StudiBrewDEX", deployer);
  await stuBrewcontract.transfer(
-  "0x4aDc44E492aBfAbBcB306575a0edDCE3ca06Cb47",
-  "" + 10 * 10 ** 18
+  "0xdEaa0aB52B4adC30eb397aDF36797e3abe5eCcbE",
+  hre.ethers.utils.parseUnits("999900", 18).toString()
 );
 
   // If you are going to the testnet make sure your deployer account has enough ETH
-  await stuBrewcontract.approve(studiBrewDEXcontract.address, hre.ethers.utils.parseEther("100"));
+  await stuBrewcontract.approve(studiBrewDEXcontract.address, hre.ethers.utils.parseEther("5000"));
   await studiBrewDEXcontract.init(hre.ethers.utils.parseEther("50"), {
-    value: hre.ethers.utils.parseEther("50"),
+    value: hre.ethers.utils.parseEther("0.5"),
     gasLimit: 200000,
   });
 
